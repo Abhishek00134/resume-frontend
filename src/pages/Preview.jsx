@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import ResumePreview from '../components/ResumePreview';
 import Loader from '../components/Loader';
 import { ArrowLeftIcon } from 'lucide-react';
-import { dummyResumeData } from '../assets/assets';
 import api from '../configs/api';
 
 const Preview = () => {
