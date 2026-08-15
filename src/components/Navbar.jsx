@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import {Link, useNavigate} from 'react-router-dom'
 import { logout } from '../app/features/authSlice';
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/logo.png'
 const Navbar = () => {
     
     const {user} = useSelector(state=>state.auth)
