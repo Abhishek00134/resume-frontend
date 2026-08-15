@@ -1,83 +1,104 @@
 import React from 'react'
-
+import Logo from '../../assets/Logo.png'
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-wrap justify-center lg:justify-between overflow-hidden gap-10 md:gap-20 py-16 px-6 md:px-16 lg:px-24 xl:px-32 text-[13px] text-gray-500 bg-linear-to-r from-white via-green-200/60 to-white mt-40">
-                <div className="flex flex-wrap items-start gap-10 md:gap-15 xl:gap-35">
-                    <a href="#">
-                        <img src="/logo.svg" alt="logo" className='h-11 w-auto' />
-                    </a>
-                    <div>
-                        <p className="text-slate-800 font-semibold">Product</p>
-                        <ul className="mt-2 space-y-2">
-                            <li><a href="/" className="hover:text-green-600 transition">Home</a></li>
-                            <li><a href="/" className="hover:text-green-600 transition">Support</a></li>
-                            <li><a href="/" className="hover:text-green-600 transition">Pricing</a></li>
-                            <li><a href="/" className="hover:text-green-600 transition">Affiliate</a></li>
-                        </ul>
+       <style>
+                {`
+                    @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+                    *{
+                        font-family: "Geist", sans-serif;
+                    }
+                `}
+            </style>
+            <div className='w-full pt-20'>
+                <footer className="relative bg-[#131314] w-full mx-auto text-white pt-8 lg:pt-12 pb-12 px-4 sm:px-8 md:px-16 lg:px-28 overflow-hidden">
+                    {/* Ambient Green Background Glow */}
+                    <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-5xl h-72 bg-green-500/25 rounded-full blur-[150px] pointer-events-none"/>
+                    
+                    <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-6 gap-8 md:gap-12">
+                        
+                        <div className="lg:col-span-3 space-y-6">
+                            <a href="https://prebuiltui.com" className="block">
+                                <img src={Logo} alt="Logo" className='h-20' />
+                            </a>
+                            <p className="text-sm/6 text-neutral-300 max-w-96">PrebuiltUI helps you build faster by transforming your design vision into fully functional, production-ready UI components.</p>
+                            <div className="flex gap-5 md:gap-6 order-1 md:order-2">
+                                {/* X (Twitter) */}
+                                <a href="#" className="text-white hover:text-gray-300">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                                    </svg>
+                                </a>
+                                {/* Github */}
+                                <a href="#" className="text-white hover:text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>
+                                    </svg>
+                                </a>
+                                {/* Linkedin */}
+                                <a href="#" className="text-white hover:text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </a>
+                                {/* Youtube */}
+                                <a href="#" className="text-white hover:text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/>
+                                    </svg>
+                                </a>
+                                {/* Instagram */}
+                                <a href="#" className="text-white hover:text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 lg:gap-28 items-start">
+                            {/* Products */}
+                            <div>
+                                <h3 className="font-medium text-sm mb-4">About</h3>
+                                <ul className="space-y-3 text-sm text-neutral-300">
+                                    <li><a href="#" className="hover:text-neutral-400">Team</a></li>
+                                    <li><a href="#" className="hover:text-neutral-400">Blog</a></li>
+                                    <li><a href="#" className="hover:text-neutral-400">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            {/* Resources */}
+                            <div>
+                                <h3 className="font-medium text-sm mb-4">Address</h3>
+                                <ul className="space-y-3 text-sm text-neutral-300">
+                                    <li><a href="#" className="hover:text-neutral-400">ResumeBuilder@gmail.com</a></li>
+                                    <li><a href="#" className="hover:text-neutral-400">+91 860228XXXX</a></li>
+                                    <li><a href="#" className="hover:text-neutral-400">New Delhi, India</a></li>
+                                </ul>
+                            </div>
+
+                            {/* Company */}
+                            <div className="col-span-2 md:col-span-1">
+                                <h3 className="font-medium text-sm mb-4">Company</h3>
+                                <ul className="space-y-3 text-sm text-neutral-300">
+                                    <li><a href="#" className="hover:text-neutral-400">About</a></li>
+                                    <li><a href="#" className="hover:text-neutral-400">Vision</a></li>
+                                    <li className="flex items-center gap-2">
+                                        <a href="#" className="hover:text-neutral-400">Careers</a>
+                                        <span className="text-[11px] px-2 py-0.5 rounded-full bg-green-950 border border-green-300 text-green-300">HIRING</span>
+                                    </li>
+                                    <li><a href="#" className="hover:text-neutral-400">Privacy policy</a></li>
+                                    <li><a href="#" className="hover:text-neutral-400">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p className="text-slate-800 font-semibold">Resources</p>
-                        <ul className="mt-2 space-y-2">
-                            <li><a href="/" className="hover:text-green-600 transition">Company</a></li>
-                            <li><a href="/" className="hover:text-green-600 transition">Blogs</a></li>
-                            <li><a href="/" className="hover:text-green-600 transition">Community</a></li>
-                            <li><a href="/" className="hover:text-green-600 transition">Careers<span className="text-xs text-white bg-green-600 rounded-md ml-2 px-2 py-1">We’re hiring!</span></a></li>
-                            <li><a href="/" className="hover:text-green-600 transition">About</a></li>
-                        </ul>
+
+                    <div className="relative z-10 max-w-7xl mx-auto mt-12 pt-4 border-t border-neutral-700 flex justify-between items-center">
+                        <p className="text-neutral-400 text-sm">© 2026</p>
+                        <p className='text-sm text-neutral-400'>All right reserved.</p>
                     </div>
-                    <div>
-                        <p className="text-slate-800 font-semibold">Legal</p>
-                        <ul className="mt-2 space-y-2">
-                            <li><a href="/" className="hover:text-green-600 transition">Privacy</a></li>
-                            <li><a href="/" className="hover:text-green-600 transition">Terms</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="flex flex-col max-md:items-center max-md:text-center gap-2 items-end">
-                    <p className="max-w-60">Making every customer feel valued—no matter the size of your audience.</p>
-                    <div className="flex items-center gap-4 mt-3">
-                        <a href="https://dribbble.com/" target="_blank" rel="noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-dribbble size-5 hover:text-green-500" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
-                                <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
-                                <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/company/" target="_blank" rel="noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin size-5 hover:text-green-500" aria-hidden="true">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect width="4" height="12" x="2" y="9"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </a>
-                        <a href="https://x.com" target="_blank" rel="noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter size-5 hover:text-green-500" aria-hidden="true">
-                                <path
-                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-youtube size-6 hover:text-green-500" aria-hidden="true">
-                                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
-                                </path>
-                                <path d="m10 15 5-3-5-3z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <p className="mt-3 text-center">© 2026 Resume Builder</p>
-                </div>
-            </footer>
-             <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-            
-                * {
-                    font-family: 'Poppins', sans-serif;
-                }
-            `}</style>
+                </footer>
+            </div>
     </>
   )
 }

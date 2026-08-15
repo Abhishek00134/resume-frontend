@@ -3,14 +3,26 @@ import { Link } from 'react-router-dom'
 
 const CalltoAction = () => {
   return (
-    <div id='cta' className='border-y border-dashed border-slate-200 w-full max-w-5xl mx-auto px-10 sm:px-16 mt-28'>
-            <div className="flex flex-col md:flex-row text-center md:text-left items-center justify-between gap-8 px-3 md:px-10 border-x border-dashed border-slate-200 py-16 sm:py-20 -mt-10 -mb-10 w-full">
-                <p className="text-xl font-medium max-w-md text-slate-800">Build a Professional Resume That Helps You Stand Out and Get Hired.</p>
-                <Link to="/app?state=register" className="flex items-center gap-2 rounded py-3 px-8 bg-green-600 hover:bg-green-700 transition text-white">
-                    <span>Get Started</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-4.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    <div id='cta' className='w-full mx-auto px-10 sm:px-16 mt-28'>
+            <section className="flex flex-col items-center justify-center mx-auto max-md:mx-2 max-md:px-2  w-full text-center rounded-2xl py-20 md:py-24 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/banners/image-1.png')] bg-cover bg-center bg-no-repeat">
+                <h1 className="text-2xl md:text-3xl font-medium text-white max-w-2xl">Build Your Dream Resume with AI</h1>
+                <div className="h-[3px] w-32 my-1 bg-gradient-to-l from-transparent to-indigo-600"></div>
+                <p className="text-sm md:text-base text-white max-w-xl">
+                    AI-powered resume builder that creates professional, ATS-optimized resumes in minutes. Land your dream job with our expert templates and intelligent suggestions.
+                </p>
+                <Link to='/app'>
+                <button className="px-8 py-2.5 mt-4 text-sm bg-gradient-to-r from-indigo-600 to-violet-500 hover:scale-105 transition duration-300 text-white rounded-full">
+                    Get Started
+                </button>
                 </Link>
-            </div>
+            </section>
+            <style>{`
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            
+                * {
+                    font-family: 'Poppins', sans-serif;
+                }
+            `}</style>
         </div>
   )
 }
