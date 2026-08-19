@@ -14,8 +14,7 @@ dist-ssr
 .env
 .env.*
 uploads/
-*.png
-*.jpg
+
 
 # Editor directories and files
 .vscode/*
